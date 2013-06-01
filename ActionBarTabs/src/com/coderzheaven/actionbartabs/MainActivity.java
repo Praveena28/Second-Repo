@@ -23,9 +23,11 @@ public class MainActivity extends Activity {
         final ActionBar bar = getActionBar();
         final int tabCount = bar.getTabCount();
         final String text = "Tab " + tabCount;
+final String text1="praveena";
         bar.addTab(bar.newTab()
                 .setText(text)
                 .setTabListener(new TabListener(new TabContentFragment(text))));
+
     }
 
     public void onRemoveTab(View v) {
